@@ -1,0 +1,61 @@
+{
+  // pages用于存放主包里面的东西一般包括启动页面,tabbar页面
+  "pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "uni-app"
+      }
+    }, {
+      "path": "pages/message/message",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "pages/my/my",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+
+    }
+  ],
+  // 存放分包下的页面
+  "subPackages": [
+    {
+      "root": "pagesA",
+      "pages": [
+        {
+          "path": "page1/page1"
+        }
+      ]
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "uniIdRouter": {},
+  "tabBar": {
+    "list": [{
+      "text": "",
+      "pagePath": "pages/index/index",
+      "iconPath": "static/image/tabbarImg/chat.png",
+      "selectedIconPath": "static/image/tabbarImg/chat-active.png"
+    }, {
+      "text": "",
+      "pagePath": "pages/message/message",
+      "iconPath": "static/image/tabbarImg/clock.png",
+      "selectedIconPath": "static/image/tabbarImg/clock-active.png"
+    }, {
+      "text": "",
+      "pagePath": "pages/my/my",
+      "iconPath": "static/image/tabbarImg/my.png",
+      "selectedIconPath": "static/image/tabbarImg/my-active.png"
+    }]
+  }
+}

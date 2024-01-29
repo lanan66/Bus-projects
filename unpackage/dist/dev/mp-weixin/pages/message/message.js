@@ -1,0 +1,1 @@
+"use strict";const e=require("../../common/vendor.js"),s={data(){return{}},methods:{}};function r(c,n,o,a,_,i){return{}}const t=e._export_sfc(s,[["render",r],["__file","C:/Users/chen/Desktop/Bus-projects/pages/message/message.vue"]]);wx.createPage(t);

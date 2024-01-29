@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/message/message",
+    "pages/my/my"
+  ],
+  "subPackages": [
+    {
+      "root": "pagesA",
+      "pages": [
+        "page1/page1"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "text": "",
+        "pagePath": "pages/index/index",
+        "iconPath": "static/image/tabbarImg/chat.png",
+        "selectedIconPath": "static/image/tabbarImg/chat-active.png"
+      },
+      {
+        "text": "",
+        "pagePath": "pages/message/message",
+        "iconPath": "static/image/tabbarImg/clock.png",
+        "selectedIconPath": "static/image/tabbarImg/clock-active.png"
+      },
+      {
+        "text": "",
+        "pagePath": "pages/my/my",
+        "iconPath": "static/image/tabbarImg/my.png",
+        "selectedIconPath": "static/image/tabbarImg/my-active.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

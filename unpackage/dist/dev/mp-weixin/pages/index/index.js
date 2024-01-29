@@ -1,0 +1,1 @@
+"use strict";const e=require("../../common/vendor.js"),t={data(){return{title:"Hello"}},onLoad(){},methods:{}};function r(o,s,c,a,i,_){return{}}const n=e._export_sfc(t,[["render",r],["__file","C:/Users/chen/Desktop/Bus-projects/pages/index/index.vue"]]);wx.createPage(n);
