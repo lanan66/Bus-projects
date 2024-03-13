@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "com-head": "../comHead/comHead",
+    "now-time": "../nowTime/nowTime",
+    "punch-tree": "../punchTree/punchTree"
+  }
+}

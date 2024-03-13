@@ -1,25 +1,25 @@
 <template>
-	<view class="content">
-		
-	</view>
+  <!-- 保洁员模块 -->
+  <cleanIndex></cleanIndex>
 </template>
 
 <script>
-	export default {
-		data() {
-			return {
-				title: 'Hello'
-			}
-		},
-		onLoad() {
-
-		},
-		methods: {
-
-		}
-	}
+  import cleanIndex from "/components/cleanIndex/cleanIndex.vue"
+  export default {
+    data() {
+      return {
+        
+      }
+    },
+    components: {
+      cleanIndex
+    },
+    methods: {
+      
+      }
+  }
 </script>
 
-<style>
+<style scoped>
 
 </style>

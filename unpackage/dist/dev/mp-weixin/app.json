@@ -1,14 +1,15 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/message/message",
-    "pages/my/my"
+    "pages/my/my",
+    "pages/login/login"
   ],
   "subPackages": [
     {
-      "root": "pagesA",
+      "root": "pages_login",
       "pages": [
-        "page1/page1"
+        "agreement/agreement",
+        "resetpassword/resetpassword"
       ]
     }
   ],
@@ -23,22 +24,27 @@
       {
         "text": "",
         "pagePath": "pages/index/index",
-        "iconPath": "static/image/tabbarImg/chat.png",
-        "selectedIconPath": "static/image/tabbarImg/chat-active.png"
-      },
-      {
-        "text": "",
-        "pagePath": "pages/message/message",
-        "iconPath": "static/image/tabbarImg/clock.png",
-        "selectedIconPath": "static/image/tabbarImg/clock-active.png"
+        "iconPath": "static/image/index_pages/home.png",
+        "selectedIconPath": "static/image/index_pages/home-active.png"
       },
       {
         "text": "",
         "pagePath": "pages/my/my",
-        "iconPath": "static/image/tabbarImg/my.png",
-        "selectedIconPath": "static/image/tabbarImg/my-active.png"
+        "iconPath": "static/image/index_pages/my.png",
+        "selectedIconPath": "static/image/index_pages/my-active.png"
       }
     ]
   },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "为了您更好的体验，请确认获取您的位置信息"
+    }
+  },
+  "requiredPrivateInfos": [
+    "getLocation",
+    "chooseLocation",
+    "onLocationChange",
+    "startLocationUpdateBackground"
+  ],
   "usingComponents": {}
 }

@@ -4,15 +4,9 @@
     {
       "path": "pages/index/index",
       "style": {
-        "navigationBarTitleText": "uni-app"
+        "navigationBarTitleText": "uni-app",
+        "navigationStyle": "custom" //设置自定义导航栏
       }
-    }, {
-      "path": "pages/message/message",
-      "style": {
-        "navigationBarTitleText": "",
-        "enablePullDownRefresh": false
-      }
-
     }, {
       "path": "pages/my/my",
       "style": {
@@ -21,16 +15,40 @@
       }
 
     }
-  ],
+      ,{
+            "path" : "pages/login/login",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "navigationStyle": "custom" //设置自定义导航栏
+            }
+            
+        }
+    ],
   // 存放分包下的页面
   "subPackages": [
     {
-      "root": "pagesA",
+      "root": "pages_login",
       "pages": [
         {
-          "path": "page1/page1"
+          "path": "agreement/agreement",
+          "style" :
+          {
+              "navigationBarTitleText": "服务协议",
+              "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "resetpassword/resetpassword",
+          "style" :
+          {
+              "navigationBarTitleText": "",
+              "enablePullDownRefresh": false,
+              "navigationStyle": "custom" //设置自定义导航栏
+          }
         }
-      ]
+            ]
     }
   ],
   "globalStyle": {
@@ -44,18 +62,13 @@
     "list": [{
       "text": "",
       "pagePath": "pages/index/index",
-      "iconPath": "static/image/tabbarImg/chat.png",
-      "selectedIconPath": "static/image/tabbarImg/chat-active.png"
-    }, {
-      "text": "",
-      "pagePath": "pages/message/message",
-      "iconPath": "static/image/tabbarImg/clock.png",
-      "selectedIconPath": "static/image/tabbarImg/clock-active.png"
-    }, {
+      "iconPath": "static/image/index_pages/home.png",
+      "selectedIconPath": "static/image/index_pages/home-active.png"
+    },{
       "text": "",
       "pagePath": "pages/my/my",
-      "iconPath": "static/image/tabbarImg/my.png",
-      "selectedIconPath": "static/image/tabbarImg/my-active.png"
+      "iconPath": "static/image/index_pages/my.png",
+      "selectedIconPath": "static/image/index_pages/my-active.png"
     }]
   }
 }

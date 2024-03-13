@@ -1,0 +1,1 @@
+<view class="container data-v-5908ac6a"><view class="time-img data-v-5908ac6a"><image class="data-v-5908ac6a" src="/static/image/index_pages/now.png" mode=""></image></view><view class="time data-v-5908ac6a">{{a}}</view></view>

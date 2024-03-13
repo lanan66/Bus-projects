@@ -1,1 +1,1 @@
-"use strict";const e=require("../../common/vendor.js"),r={data(){return{}},methods:{}};function s(c,n,o,a,_,i){return{}}const t=e._export_sfc(r,[["render",s],["__file","C:/Users/chen/Desktop/Bus-projects/pages/my/my.vue"]]);wx.createPage(t);
+"use strict";const e=require("../../common/vendor.js"),r={data(){return{}},methods:{}};function s(c,n,o,a,_,i){return{}}const t=e._export_sfc(r,[["render",s],["__file","C:/Users/chen/Desktop/公交项目/Bus-projects/pages/my/my.vue"]]);wx.createPage(t);

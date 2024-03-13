@@ -1,4 +1,7 @@
 {
   "navigationBarTitleText": "uni-app",
-  "usingComponents": {}
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "clean-index": "../../components/cleanIndex/cleanIndex"
+  }
 }

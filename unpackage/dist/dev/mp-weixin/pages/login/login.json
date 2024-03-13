@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "show-tip": "../../components/showTip/showTip",
+    "show-privacy-agreement": "../../components/showPrivacyAgreement/showPrivacyAgreement"
+  }
+}
