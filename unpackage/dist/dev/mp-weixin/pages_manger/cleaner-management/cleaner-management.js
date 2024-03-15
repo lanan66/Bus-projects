@@ -1,0 +1,1 @@
+"use strict";const e=require("../../common/vendor.js"),n={data(){return{}},methods:{}};function r(a,c,s,o,_,m){return{}}const t=e._export_sfc(n,[["render",r],["__scopeId","data-v-ffcbd905"],["__file","C:/Users/chen/Desktop/公交项目/Bus-projects/pages_manger/cleaner-management/cleaner-management.vue"]]);wx.createPage(t);

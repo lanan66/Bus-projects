@@ -3,8 +3,8 @@
     <!-- 自定义头部 -->
     <view class="nav-top" :style="{height:(navheight*2) + 'rpx'}">
       <view class="bg-img">
-        <image src="/static/image/index_pages/head-bg.png" mode="widthFix"></image>
-        <view class="title" :style="{lineHeight:(navheight*2.8) + 'rpx'}">智慧物业管理平台</view>
+        <image :src="bgurl" mode="widthFix"></image>
+        <view class="title" :style="{lineHeight:(navheight*2.8) + 'rpx',fontSize:textsize*2 +'rpx'}">{{title}}</view>
       </view>
     </view>
   </view>
@@ -12,6 +12,7 @@
 
 <script>
   export default {
+    props:["bgurl","title","textsize"],
     name:"comHead",
     data() {
       return {

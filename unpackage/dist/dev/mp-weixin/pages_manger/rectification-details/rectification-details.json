@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "洁净详情",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "punch-tree": "../../components/punchTree/punchTree"
+  }
+}

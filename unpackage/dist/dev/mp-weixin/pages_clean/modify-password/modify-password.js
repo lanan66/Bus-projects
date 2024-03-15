@@ -1,0 +1,1 @@
+"use strict";const e=require("../../common/vendor.js"),s={data(){return{}},methods:{}};function r(t,c,a,n,_,d){return{}}const o=e._export_sfc(s,[["render",r],["__scopeId","data-v-7c73f933"],["__file","C:/Users/chen/Desktop/公交项目/Bus-projects/pages_clean/modify-password/modify-password.vue"]]);wx.createPage(o);

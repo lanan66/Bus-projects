@@ -2,6 +2,6 @@
   "navigationBarTitleText": "uni-app",
   "navigationStyle": "custom",
   "usingComponents": {
-    "clean-index": "../../components/cleanIndex/cleanIndex"
+    "manger-index": "../../components/mangerIndex/mangerIndex"
   }
 }

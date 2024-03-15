@@ -11,6 +11,25 @@
         "agreement/agreement",
         "resetpassword/resetpassword"
       ]
+    },
+    {
+      "root": "pages_clean",
+      "pages": [
+        "clean-info/clean-info",
+        "punch-results/punch-results",
+        "punch/punch",
+        "modify-password/modify-password"
+      ]
+    },
+    {
+      "root": "pages_manger",
+      "pages": [
+        "notice/notice",
+        "notice-details/notice-details",
+        "rectification-details/rectification-details",
+        "upload-rectification-results/upload-rectification-results",
+        "cleaner-management/cleaner-management"
+      ]
     }
   ],
   "window": {

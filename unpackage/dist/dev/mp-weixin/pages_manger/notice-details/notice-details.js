@@ -1,0 +1,1 @@
+"use strict";const e=require("../../common/vendor.js"),t={data(){return{}},methods:{}};function s(c,n,o,a,_,i){return{}}const r=e._export_sfc(t,[["render",s],["__scopeId","data-v-0b958897"],["__file","C:/Users/chen/Desktop/公交项目/Bus-projects/pages_manger/notice-details/notice-details.vue"]]);wx.createPage(r);

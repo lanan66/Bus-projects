@@ -402,12 +402,12 @@
 
   .tab-bottom {
     color: #999;
-    bottom: -40%;
     font-size: 20rpx;
     width: 480rpx;
-    position: absolute;
+    position: fixed;
     left: 50%;
     transform: translateX(-50%);
+    bottom: 32rpx;
     display: flex;
     align-items: center;
   }

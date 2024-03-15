@@ -2,7 +2,7 @@
   <!-- 保洁员模块 -->
   <view class="container">
     <!-- 公共的头部 -->
-    <comHead></comHead>
+    <comHead :bgurl="'/static/image/index_pages/head-bg.png'" :title="'智慧物业管理平台'" :textsize=17></comHead>
     <view class="content">
       <!-- 现在的时间 -->
       <nowTime></nowTime>
@@ -25,7 +25,7 @@
                 <view class="item-info-item-value">广州天河区体育西街道193号</view>
               </view>
             </view>
-            <view class="item-info-right">
+            <view class="item-info-right" @click="gotodetails">
               <image src="/static/image/index_pages/right.png" mode=""></image>
               <view class="moredetails">详情</view>
             </view>
@@ -117,9 +117,8 @@
   export default {
     name: "cleanIndex",
     data() {
-
       return {
-
+      
       }
     },
     components: {
@@ -128,7 +127,11 @@
       punchTree
     },
     methods: {
-
+      gotodetails() {
+        uni.navigateTo({
+          url:'/pages_clean/clean-info/clean-info'
+        })
+      }
     }
   }
 </script>

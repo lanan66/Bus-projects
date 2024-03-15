@@ -13,38 +13,10 @@
     <!-- 内容区域 -->
     <view class="content">
       <view class="content-item" v-show="current == 0" :style="{height:scH +'px',overflow:isoverflow}">
-        <view class="time-item" v-for="(item,index) in timeList" :key="item.id">
-          <view class="dashedborder"></view>
-          <view class="time-item-time">
-            {{item.time}}
-          </view>
-          <view class="time-item-info">
-            <view class="time-item-info-head">
-              <view class="time-item-name">{{item.title}}</view>
-              <view class="time-item-status" :class="moveclass(item.status)">
-                <text class="dot" :class="movedot(item.status)">·</text>
-                <text v-show="item.status == 3">超时未打卡</text>
-                <text v-show="item.status == 2">超时打卡</text>
-                <text v-show="item.status == 1">已打卡</text>
-                <text v-show="item.status == 0">未打卡</text>
-              </view>
-            </view>
-            <view class="time-item-content">
-              {{item.info}}
-            </view>
-            <view class="time-item-bot">
-              <view class="checked">
-                查看打卡结果
-              </view>
-              <view class="clock-btn" v-if="item.status == 0">
-                打卡
-              </view>
-            </view>
-          </view>
-        </view>
+        <punchTreeItem :itemobj="item" :isindex=true :ispunch=fasle v-for="(item,index) in timeList" :key="item.id"></punchTreeItem>
       </view>
       <!-- 收起 -->
-      <view class="collapse" @click="close" v-if="isshow == true">
+      <view class="collapse" @click="close" v-if="isshow == true" :style="{display: nodrop}">
         <view class="collapse-img">
           <image src="../../static/image/index_pages/drop.png" mode="" v-show="isshow == true"></image>
         </view>
@@ -57,7 +29,7 @@
         <view class="collapse-img">
           <image src="../../static/image/index_pages/drop.png" mode="" style="transform: rotate(180deg);"></image>
         </view>
-        <view class="collapse-text" >
+        <view class="collapse-text">
           展开
         </view>
       </view>
@@ -69,8 +41,15 @@
 </template>
 
 <script>
+  import punchTreeItem from "/components/punchTreeItem/punchTreeItem.vue"
   export default {
     name: "punchTree",
+    props: {
+      nodrop: {
+        type: String,
+        default: 'display'
+      }
+    },
     data() {
       return {
         routeList: [{
@@ -137,6 +116,9 @@
     },
     mounted() {
       this.getHeight()
+    },
+    components: {
+      punchTreeItem
     },
     methods: {
       close() {

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "通知",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "notice-item": "../../components/noticeItem/noticeItem"
+  }
+}

@@ -11,44 +11,110 @@
       "path": "pages/my/my",
       "style": {
         "navigationBarTitleText": "",
-        "enablePullDownRefresh": false
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom" //设置自定义导航栏
       }
 
+    }, {
+      "path": "pages/login/login",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom" //设置自定义导航栏
+      }
     }
-      ,{
-            "path" : "pages/login/login",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false,
-                "navigationStyle": "custom" //设置自定义导航栏
-            }
-            
-        }
-    ],
+  ],
   // 存放分包下的页面
-  "subPackages": [
-    {
+  "subPackages": [{
       "root": "pages_login",
-      "pages": [
-        {
+      "pages": [{
           "path": "agreement/agreement",
-          "style" :
-          {
-              "navigationBarTitleText": "服务协议",
-              "enablePullDownRefresh": false
+          "style": {
+            "navigationBarTitleText": "服务协议",
+            "enablePullDownRefresh": false
           }
         },
         {
           "path": "resetpassword/resetpassword",
-          "style" :
-          {
-              "navigationBarTitleText": "",
-              "enablePullDownRefresh": false,
-              "navigationStyle": "custom" //设置自定义导航栏
+          "style": {
+            "navigationBarTitleText": "",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom" //设置自定义导航栏
           }
         }
-            ]
+      ]
+    },
+    {
+      "root": "pages_clean",
+      "pages": [{
+          "path": "clean-info/clean-info",
+          "style": {
+            "navigationBarTitleText": "洁净详情",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "punch-results/punch-results",
+          "style": {
+            "navigationBarTitleText": "打卡结果",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "punch/punch",
+          "style": {
+            "navigationBarTitleText": "打卡",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "modify-password/modify-password",
+          "style": {
+            "navigationBarTitleText": "修改密码",
+            "enablePullDownRefresh": false
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages_manger",
+      "pages": [{
+          "path": "notice/notice",
+          "style": {
+            "navigationBarTitleText": "通知",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "notice-details/notice-details",
+          "style": {
+            "navigationBarTitleText": "通知详情",
+            "enablePullDownRefresh": false
+          }
+        }, {
+          "path": "rectification-details/rectification-details",
+          "style": {
+            "navigationBarTitleText": "洁净详情",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "upload-rectification-results/upload-rectification-results",
+          "style": {
+            "navigationBarTitleText": "上传整改结果",
+            "enablePullDownRefresh": false
+          }
+        }
+
+        , {
+          "path": "cleaner-management/cleaner-management",
+          "style": {
+            "navigationBarTitleText": "保洁员管理",
+            "enablePullDownRefresh": false
+          }
+
+        }
+      ]
     }
   ],
   "globalStyle": {
@@ -64,7 +130,7 @@
       "pagePath": "pages/index/index",
       "iconPath": "static/image/index_pages/home.png",
       "selectedIconPath": "static/image/index_pages/home-active.png"
-    },{
+    }, {
       "text": "",
       "pagePath": "pages/my/my",
       "iconPath": "static/image/index_pages/my.png",
